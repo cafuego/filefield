@@ -110,6 +110,7 @@ function theme_filefield_file($file) {
   $path = $file['filepath'];
   $url = file_create_url($path);
   $icon = theme('filefield_icon', $file);
+  $size = theme('filefield_size', $file);
 
   // Set options as per anchor format described at
   // http://microformats.org/wiki/file-format-examples
@@ -130,5 +131,5 @@ function theme_filefield_file($file) {
     $options['attributes']['title'] = $file['filename'];
   }
 
-  return '<div class="filefield-file clear-block">'. $icon . l($link_text, $url, $options) .'</div>';
+  return '<div class="filefield-file clear-block">'. $icon . l($link_text, $url, $options) . $size . '</div>';
 }

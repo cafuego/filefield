@@ -219,3 +219,13 @@ function _filefield_generic_icon_map($file) {
       return FALSE;
   }
 }
+
+/**
+ * Return a formatted string containing the size of a given file.
+ *
+ * @param $file
+ *   A file object for which to make a size string.
+ */
+function theme_filefield_size($file) {
+  return '<span class="filefield-size">' . format_size($file['filesize']) . '</span>';
+}

@@ -14,7 +14,9 @@
   margin-right: 0.4em; /* RTL */
 }
 
-/* End formatter styles. */
+.filefield-size {
+  margin-left: 0.4em;
+}
 
 /**
  * General widget form styles (applicable to all widgets).
